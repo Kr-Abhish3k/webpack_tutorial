@@ -1,10 +1,11 @@
+var htmlWebpackPlugin = require("html-webpack-plugin");
 const path = require("path");
 module.exports = {
 	mode: "development", //[will not minify the output file]
 	//devtool: "none",
 	entry: "./src/index.js",
 	output: {
-		filename: "main.js",
+		filename: "main.[contentHash].js",
 		path: path.resolve(__dirname, "scripts")
 	},
 	module: {
@@ -18,5 +19,10 @@ module.exports = {
 				]
 			}
 		]
-	}
+	},
+	plugins: [
+		new htmlWebpackPlugin({
+			template: "./src/template.html"
+		})
+	]
 };
