@@ -1,8 +1,6 @@
 var htmlWebpackPlugin = require("html-webpack-plugin");
 const path = require("path");
 module.exports = {
-	mode: "development", //[will not minify the output file]
-	//devtool: "none",
 	entry: "./src/index.js",
 	output: {
 		filename: "main.[contentHash].js",
