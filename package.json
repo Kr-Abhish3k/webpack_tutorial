@@ -19,6 +19,8 @@
 	},
 	"homepage": "https://github.com/AbhiCrest/webpack_tutorial#readme",
 	"devDependencies": {
+		"css-loader": "^3.2.0",
+		"style-loader": "^1.0.0",
 		"webpack": "^4.39.3",
 		"webpack-cli": "^3.3.8"
 	}
