@@ -1,6 +1,3 @@
-var htmlWebpackPlugin = require("html-webpack-plugin");
-const { cleanWebpackPlugin } = require("clean-webpack-plugin");
-
 const path = require("path");
 module.exports = {
 	entry: {
@@ -13,14 +10,6 @@ module.exports = {
 	},
 	module: {
 		rules: [
-			{
-				test: /\.scss$/,
-				use: [
-					"style-loader", //3.injects styles into DOM using style-loader ^
-					"css-loader", //2.translates css to js using css loader      ™  ^
-					"sass-loader" // 1.convert sass to css using sass-loader       ^
-				]
-			},
 			{
 				test: /\.html$/,
 				use: ["html-loader"]
@@ -36,10 +25,5 @@ module.exports = {
 				}
 			}
 		]
-	},
-	plugins: [
-		new htmlWebpackPlugin({
-			template: "./src/template.html"
-		})
-	]
+	}
 };
