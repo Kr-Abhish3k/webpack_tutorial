@@ -6,7 +6,7 @@ module.exports = merge(common, {
 	//devtool: "none",
 
 	output: {
-		filename: "main.js",
+		filename: "[name].js",
 		path: path.resolve(__dirname, "scripts")
 	}
 });

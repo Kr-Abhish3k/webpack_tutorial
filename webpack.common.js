@@ -3,9 +3,12 @@ const { cleanWebpackPlugin } = require("clean-webpack-plugin");
 
 const path = require("path");
 module.exports = {
-	entry: "./src/index.js",
+	entry: {
+		main: "./src/index.js",
+		vendor: "./src/vendor.js"
+	},
 	output: {
-		filename: "main.[contentHash].js",
+		filename: "[name].[contentHash].bundle.js",
 		path: path.resolve(__dirname, "scripts")
 	},
 	module: {
