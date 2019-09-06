@@ -1,0 +1,25 @@
+{
+	"name": "webpack-demo-app",
+	"version": "1.0.0",
+	"private": "true",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"start": "webpack"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/AbhiCrest/webpack_tutorial.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/AbhiCrest/webpack_tutorial/issues"
+	},
+	"homepage": "https://github.com/AbhiCrest/webpack_tutorial#readme",
+	"devDependencies": {
+		"webpack": "^4.39.3",
+		"webpack-cli": "^3.3.8"
+	}
+}
